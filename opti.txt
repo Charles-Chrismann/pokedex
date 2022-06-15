@@ -1,0 +1,3 @@
+evolution chain => regarder si des pkms sont pas deja load
+
+afficher famille par famille vu que pour l'evo faut fetch

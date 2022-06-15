@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/pokeball.png" />
+    <title>POKEDEX</title>
+</head>
+<body>
+    <header>
+        <div>
+            <label for="uncaught">uncaught</label>
+            <input type="radio" name="caught" id="uncaught">
+        </div>
+        <div>
+            <label for="caught">caught</label>
+            <input type="radio" name="caught" id="caught">
+        </div>
+        <div>
+            <span></span>
+        </div>
+        <div>
+            <input type="text" name="" id="" placeholder="Rechercher">
+        </div>
+    </header>
+    <div class="sideBar">
+        <button class="All">All</button>
+        <button class="Normal">Normal</button>
+        <button class="Fighting">Fighting</button>
+        <button class="Flying">Flying</button>
+        <button class="Poison">Poison</button>
+        <button class="Ground">Ground</button>
+        <button class="Rock">Rock</button>
+        <button class="Bug">Bug</button>
+        <button class="Ghost">Ghost</button>
+        <button class="Steel">Steel</button>
+        <button class="Fire">Fire</button>
+        <button class="Water">Water</button>
+        <button class="Grass">Grass</button>
+        <button class="Electric">Electric</button>
+        <button class="Psychic">Psychic</button>
+        <button class="Ice">Ice</button>
+        <button class="Dragon">Dragon</button>
+        <button class="Fairy">Fairy</button>
+        <button class="Dark">Dark</button>
+    </div>
+    <main>
+        <template class="template__pokemon">
+            <div class="pokemon">
+                <div class="pokemon__height">0.7m</div>
+                <div class="pokemon__weight">6.9kg</div>
+                <div class="card">
+                    <p class="pokemon__id">#001</p>
+                    <img class="pokemon__img">
+                    <div class="name">
+                        <input type="checkbox"> 
+                        <p class="pokemon__name">name</p>
+                    </div>
+                    <p>Seed Pokemon</p>
+                    <p class="pokemon__types">Grass</p>
+                    <p class="pokemon__abilities">Overgrow</p>
+                </div>
+                <div class="stats">
+                    <div class="pokemon__hp">
+                        <p>Hp</p>
+                        <p>450</p>               
+                        <progress max="255" value="45"> 70% </progress>
+                    </div>
+                    <div class="pokemon__atk">
+                        <p>Attack</p>
+                        <p>490</p>               
+                        <progress max="255" value="49"></progress>
+                    </div>
+                    <div class="pokemon__def">
+                        <p>Defense</p>
+                        <p>65</p>               
+                        <progress max="255" value="65"></progress>
+                    </div>
+                    <div class="pokemon__speAtk">
+                        <p>Special Attack</p>
+                        <p>65</p>               
+                        <progress max="255" value="65"></progress>
+                    </div>
+                    <div class="pokemon__speDef">
+                        <p>Special Defense</p>
+                        <p>65</p>               
+                        <progress max="255" value="65"></progress>
+                    </div>
+                    <div class="pokemon__spd">
+                        <p>Speed</p>
+                        <p>45</p>               
+                        <progress max="255" value="45"></progress>
+                    </div>
+                </div>
+                <div class="evolutions">
+                    <h1>Evolutions</h1>
+                    <img class="pokemon__current" src="images/bulbizarre.png" alt="bulbizarre">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                    <p>Level 16</p>
+                    <img class="pokemon__next" src="images/herbizarre.png" alt="herbizarre">
+                    <!-- <img src="images/herbizarre.png" alt="herbizarre">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                    <p>Level 32</p>
+                    <img src="images/florizarre.png" alt="florizarre"> -->
+                </div>
+            </div>
+        </template>
+        <section id="pokemons" style="margin-top: 96px;"></section>
+        <!-- <div class="search">
+            <p>Bulbasaur</p>
+            <ion-icon name="search-outline"></ion-icon>
+        </div> -->
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script type="module" src="js/script2.js"></script> -->
+</body>
+</html>
